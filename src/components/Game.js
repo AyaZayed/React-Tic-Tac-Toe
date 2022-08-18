@@ -50,7 +50,7 @@ export default class Game extends Component {
     if (winner) {
       status = "Winner is: " + winner;
     } else {
-      status = "NextPlayer: " + (this.state.xIsNext ? "O" : "X");
+      status = "Next Player: " + (this.state.xIsNext ? "O" : "X");
     }
 
     const moves = history.map((step, move) => {
